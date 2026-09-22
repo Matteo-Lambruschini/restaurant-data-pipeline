@@ -154,3 +154,39 @@ Run the tests with:
 
 ```bash
 python -m pytest
+## What I Learned
+
+Building this project helped me develop practical experience with the core concepts of a data engineering workflow.
+
+Key takeaways include:
+
+- designing an end-to-end ETL pipeline
+- working with multiple CSV data sources
+- validating data before processing
+- joining relational datasets using Pandas
+- calculating operational and financial KPIs
+- creating analytical tables for reporting
+- loading transformed data into SQLite
+- writing SQL queries for business analysis
+- implementing structured logging and error handling
+- writing automated tests with pytest
+- using Git and GitHub for version control
+- configuring continuous integration with GitHub Actions
+
+The project also helped me understand the importance of reproducibility, data quality and automated validation in a data pipeline.
+
+
+## Future Improvements
+
+Possible future improvements include:
+
+- containerizing the pipeline with Docker
+- moving from SQLite to PostgreSQL
+- separating the pipeline into reusable Python modules
+- adding configuration files and environment variables
+- introducing more advanced data quality checks
+- scheduling the pipeline automatically
+- creating a dashboard for restaurant KPIs
+- processing larger datasets
+- adding cloud storage or cloud database integration
+- expanding the CI pipeline with additional quality checks
