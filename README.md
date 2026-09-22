@@ -68,7 +68,17 @@ Load into SQLite
       v
 SQL analysis
 ```
+## Technologies
 
+- Python
+- Pandas
+- SQL
+- SQLite
+- Git
+- GitHub
+- pytest
+- GitHub Actions
+- Docker
 ## Architecture Diagram
 
 ```mermaid
@@ -154,6 +164,34 @@ Run the tests with:
 
 ```bash
 python -m pytest
+## Docker
+
+The project can be built and executed inside a Docker container, providing a reproducible environment independent of the local Python installation.
+
+### Build the Docker image
+
+```bash
+docker build -t restaurant-data-pipeline .
+```
+
+### Run the pipeline
+
+```bash
+docker run --rm restaurant-data-pipeline
+```
+
+A successful container execution produces:
+
+```text
+Pipeline completed successfully.
+Sales processed: 1500
+Total revenue: 72930.00
+Total gross profit: 52746.60
+Daily KPI records created: 90
+Product performance records created: 10
+```
+
+The Docker image installs the project dependencies from `requirements.txt` and executes `pipeline.py` automatically.
 ## What I Learned
 
 Building this project helped me develop practical experience with the core concepts of a data engineering workflow.
@@ -172,6 +210,7 @@ Key takeaways include:
 - writing automated tests with pytest
 - using Git and GitHub for version control
 - configuring continuous integration with GitHub Actions
+- containerizing a Python data pipeline with Docker
 
 The project also helped me understand the importance of reproducibility, data quality and automated validation in a data pipeline.
 
@@ -180,7 +219,6 @@ The project also helped me understand the importance of reproducibility, data qu
 
 Possible future improvements include:
 
-- containerizing the pipeline with Docker
 - moving from SQLite to PostgreSQL
 - separating the pipeline into reusable Python modules
 - adding configuration files and environment variables
