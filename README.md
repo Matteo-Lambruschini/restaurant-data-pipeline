@@ -164,6 +164,8 @@ Run the tests with:
 
 ```bash
 python -m pytest
+```
+
 ## Docker
 
 The project can be built and executed inside a Docker container, providing a reproducible environment independent of the local Python installation.
