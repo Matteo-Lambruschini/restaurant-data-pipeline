@@ -63,3 +63,27 @@ Load into SQLite
       |
       v
 SQL analysis
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+    A[products.csv] --> C[Python / Pandas ETL]
+    B[sales.csv] --> C
+
+    C --> D[Data Validation]
+    D --> E[Merge on product_id]
+    E --> F[Business Metrics]
+
+    F --> G[sales_enriched.csv]
+    F --> H[(SQLite)]
+
+    H --> I[sales_raw]
+    H --> J[products]
+    H --> K[sales]
+    H --> L[daily_kpis]
+    H --> M[product_performance]
+
+    K --> N[SQL Analysis]
+    L --> N
+    M --> N
+```
