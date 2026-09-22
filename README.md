@@ -91,3 +91,16 @@ flowchart LR
     L --> N
     M --> N
 ```
+## Example Results
+
+A successful pipeline run processes 1,500 synthetic sales records and produces the following results:
+
+| Metric | Result |
+|---|---:|
+| Sales records processed | 1,500 |
+| Total revenue | 72,930.00 |
+| Total gross profit | 52,746.60 |
+| Daily KPI records | 90 |
+| Product performance records | 10 |
+
+These results are generated from synthetic restaurant sales data created specifically for this project.
