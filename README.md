@@ -64,8 +64,6 @@ Save processed data
 Load into SQLite
       |
       v
-      |
-      v
 SQL analysis
 ```
 ## Technologies
