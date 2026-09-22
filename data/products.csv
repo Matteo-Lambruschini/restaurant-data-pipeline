@@ -1,0 +1,11 @@
+product_id,product_name,category,unit_price,unit_cost
+P001,Bo Bun,Main,28,8.40
+P002,Pho,Main,25,7.20
+P003,Banh Mi,Main,18,5.00
+P004,Fried Rice,Main,23,6.50
+P005,Spring Rolls,Starter,14,4.20
+P006,Dumplings,Starter,16,4.80
+P007,Mango Sticky Rice,Dessert,12,3.20
+P008,Coconut Dessert,Dessert,11,2.90
+P009,Homemade Lemonade,Drink,7,1.20
+P010,Iced Tea,Drink,6,0.90

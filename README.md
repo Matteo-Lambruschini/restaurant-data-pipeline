@@ -1,42 +1,65 @@
 # Restaurant Operations Data Pipeline
 
-A small end-to-end data engineering project built with Python, Pandas, SQLite and SQL.
+An end-to-end data engineering project that simulates a restaurant operations pipeline using Python, Pandas, SQLite and SQL.
 
-The project simulates a restaurant sales data pipeline that extracts raw sales data from CSV files, cleans and transforms the data, stores the processed data in SQLite, and enables analysis using SQL queries.
+The project extracts raw sales and product data from CSV files, validates and transforms the data, calculates business metrics, creates analytical tables, and loads the results into a SQLite database for SQL analysis.
 
-## Pipeline
+The dataset is synthetic and was generated specifically for this project.
 
-Raw CSV data
-→ Extract with Python/Pandas
-→ Clean and transform data
-→ Calculate revenue
-→ Save processed CSV
-→ Load into SQLite
-→ Query data with SQL
+---
 
-## Technologies
+## Project Overview
 
-- Python
-- Pandas
-- SQLite
-- SQL
-- Git
+The pipeline processes:
 
-## Project Structure
+- 1,500 synthetic sales records
+- 10 restaurant products
+- product categories
+- selling prices
+- unit food costs
+- sales quantities
+- transaction dates
+
+The pipeline calculates operational KPIs including:
+
+- Revenue
+- Food cost
+- Gross profit
+- Food cost percentage
+- Gross margin percentage
+- Daily sales performance
+- Product performance
+
+---
+
+## Data Pipeline
 
 ```text
-restaurant-data-pipeline/
-├── data/
-│   └── sales.csv
-├── processed/
-│   └── sales_clean.csv
-├── database/
-│   └── restaurant.db
-├── sql/
-│   └── queries.sql
-├── pipeline.py
-├── read_csv.py
-├── transform_sales.py
-├── load_to_sqlite.py
-├── requirements.txt
-└── README.md
+Raw CSV files
+      |
+      v
+Extract with Python / Pandas
+      |
+      v
+Data validation
+      |
+      v
+Data cleaning
+      |
+      v
+Merge sales + product data
+      |
+      v
+Calculate business metrics
+      |
+      v
+Create analytical tables
+      |
+      v
+Save processed data
+      |
+      v
+Load into SQLite
+      |
+      v
+SQL analysis
