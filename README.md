@@ -134,3 +134,21 @@ SQL analysis of the synthetic dataset highlights several operational patterns:
 | 2026-08 | 21,951 | 15,914.30 |
 
 These insights are based on synthetic data generated with a fixed random seed to keep the project reproducible.
+
+## Automated Testing
+
+The project includes automated tests built with `pytest`.
+
+The test suite validates:
+
+- successful end-to-end pipeline execution
+- expected columns in the processed dataset
+- revenue calculations
+- gross profit calculations
+- positive sales quantities
+- successful product matching
+
+Run the tests with:
+
+```bash
+python -m pytest
