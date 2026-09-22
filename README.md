@@ -1,5 +1,7 @@
 # Restaurant Operations Data Pipeline
 
+[![Pipeline Tests](https://github.com/Matteo-Lambruschini/restaurant-data-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/Matteo-Lambruschini/restaurant-data-pipeline/actions/workflows/tests.yml)
+
 An end-to-end data engineering project that simulates a restaurant operations pipeline using Python, Pandas, SQLite and SQL.
 
 The project extracts raw sales and product data from CSV files, validates and transforms the data, calculates business metrics, creates analytical tables, and loads the results into a SQLite database for SQL analysis.
