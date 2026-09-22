@@ -104,3 +104,33 @@ A successful pipeline run processes 1,500 synthetic sales records and produces t
 | Product performance records | 10 |
 
 These results are generated from synthetic restaurant sales data created specifically for this project.
+## Key SQL Insights
+
+SQL analysis of the synthetic dataset highlights several operational patterns:
+
+- **Pho** generated the highest product revenue: **14,075**
+- **Pho** was also the highest-volume product with **563 units sold**
+- The **Main** category generated the highest category revenue: **42,740**
+- July produced the highest monthly revenue: **26,838**
+- Monday generated the highest revenue by day of week: **12,530**
+- Total gross profit across the dataset was **52,746.60**
+
+### Top Products by Revenue
+
+| Product | Units Sold | Revenue | Gross Profit |
+|---|---:|---:|---:|
+| Pho | 563 | 14,075 | 10,021.40 |
+| Bo Bun | 406 | 11,368 | 7,957.60 |
+| Fried Rice | 385 | 8,855 | 6,352.50 |
+| Banh Mi | 469 | 8,442 | 6,097.00 |
+| Dumplings | 453 | 7,248 | 5,073.60 |
+
+### Monthly Revenue
+
+| Month | Revenue | Gross Profit |
+|---|---:|---:|
+| 2026-06 | 24,141 | 17,405.50 |
+| 2026-07 | 26,838 | 19,426.80 |
+| 2026-08 | 21,951 | 15,914.30 |
+
+These insights are based on synthetic data generated with a fixed random seed to keep the project reproducible.
